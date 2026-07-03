@@ -12,12 +12,14 @@ const Welcome = () => {
     return(
         <div className="main-container welcomepage">
            <div className="welcome-content">
-            <h1>Welcome to PopX</h1>
+            <div><h1>Welcome to PopX</h1></div>
+            <div>
             <p>
                 Lorem ipsum dolor sit amet,
                 <br />
                 consectetur adipisicing elit.
             </p>
+            </div>
             </div>  
             <div className="btns">
                 <button onClick={handleCreateAccount} className="create-account-btn">Create Account</button>
