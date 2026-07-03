@@ -9,9 +9,6 @@ import FormControl from '@mui/material/FormControl';
 
 const CreateAccount = () => {
     const navigate = useNavigate();
-    const handleAcc= () => {
-            navigate = ("/AccountSetting")
-    }
     const [values, setValues] = useState({
         fullName: '',
         phone: '',
@@ -38,7 +35,7 @@ const CreateAccount = () => {
 
     const handleSubmit = () => {
         if (!isValid) return;
-        navigate('/Login');
+        navigate('/account-settings');
     };
 
     return (
@@ -73,8 +70,12 @@ const CreateAccount = () => {
             </div>
 
             <div className="bottom-btn">
-                <button onClick = {handleAcc}
-                className="create-account-btn" style={{ width: '100%', height: 46 }} disabled={!isValid} onClick={handleSubmit}>
+                <button
+                    className="create-account-btn"
+                    style={{ width: '100%', height: 46 }}
+                    disabled={!isValid}
+                    onClick={handleSubmit}
+                >
                     Create new account
                 </button>
             </div>
