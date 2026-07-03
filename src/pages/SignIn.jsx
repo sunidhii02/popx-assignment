@@ -12,7 +12,7 @@ const SignIn = () => {
 
     const handleLogin = () => {
         if (!valid) return
-        navigate('/Login')
+        navigate('/account-settings')
     }
     return (
         <div className="main-container signinpage">
